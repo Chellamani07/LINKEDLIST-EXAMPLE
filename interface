@@ -1,0 +1,40 @@
+interface Vehicle{
+    void price();
+    void brand();
+    void colour();
+}
+class Tata implements Vehicle {
+    public void price(){
+        System.out.println("THOUSAND AND HUNDRED");
+    }
+    public void brand(){
+        System.out.println("Tata");
+    }
+    public void colour(){
+        System.out.println("BLACK");
+    }
+}
+class Maruti implements Vehicle{
+    public void price(){
+        System.out.println("TEN");
+    }
+    public void brand(){
+        System.out.println("maruti");
+    }
+    public void colour(){
+        System.out.println("RED");
+    }
+}
+public class Inter {
+public static void main(String[] args) {
+    Vehicle a=new Tata();
+    a.price();
+    a.brand();
+    a.colour();
+    Vehicle b=new Maruti();
+    b.price();
+    b.brand();
+    b.colour();
+}
+    
+}
